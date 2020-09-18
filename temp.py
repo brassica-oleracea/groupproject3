@@ -20,3 +20,10 @@ count = 0
 for line in open(FILE_NAME):
     count = count + 1
 print('The number of total requests is' ,count)
+#Opensthe log and counts instances of requests occuring in the last year.
+openedfile = open(FILE_NAME)
+readfile = openedfile.read()
+count2 = 0
+for line in readfile.split('1995'):
+    count2 = count2 + 1
+print('The total number of requests in 1995 is' ,count2)
